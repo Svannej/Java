@@ -10,5 +10,15 @@ public class Es4 {
         }
 
         System.out.println("la somma è: " + gemini);
+        
+        int x = 10;
+
+        while (x > 0) {
+            if (x % 2 == 0) {
+                System.out.println(x);
+            }
+            x--;
+            
+        }
     }
 }
