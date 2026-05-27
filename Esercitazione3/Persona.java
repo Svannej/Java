@@ -1,7 +1,5 @@
 package Esercitazione3;
 
-import javax.sound.midi.SysexMessage;
-
 public class Persona {
    
     //essendo delle variabili sensibili, a fini di sicurezza
