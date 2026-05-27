@@ -1,27 +1,26 @@
 package Esercitazione3;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Collections; // Importante! Ci serve per il metodo sort()
 
 public class Es4punto24 {
-    
-    public static void main(String args[]){
+    public static void main(String[] args) {
+        
+        List<String> miaLista = new ArrayList<>();
+        miaLista.add("Arriva");
+        miaLista.add("la");
+        miaLista.add("luce");
+        miaLista.add("su");
+        miaLista.add("Urano");
+        
+        //prima dell'ordinamento
+        System.out.println(miaLista);
 
-        Set<String> mioSet = new HashSet<>();
+        Collections.sort(miaLista);
 
-        mioSet.add("Arriva");
-        mioSet.add("la");
-        mioSet.add("luce");
-        mioSet.add("su");
-        mioSet.add("Urano");
-        //aggiungiamo luce una seconda volta
-        mioSet.add("luce");
+        System.out.println(miaLista);
 
-        //stampiamo tutto il set
-        System.out.println(mioSet);
-
-        //notiamo che la secondoa volta la parola "luce" non viene inserita e
-        //tutte le parole vengono stampate in ordine casuale, non di inserimento
 
     }
 }
