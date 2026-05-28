@@ -1,7 +1,5 @@
 package Esercitazione4;
 
-import javax.swing.plaf.synth.SynthStyle;
-
 public class Es2 {
     public static void main(){
 
