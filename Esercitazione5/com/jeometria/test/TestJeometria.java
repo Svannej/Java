@@ -13,7 +13,7 @@ public class TestJeometria {
         jeometria calcolatore = new jeometria();
 
 
-        System.out.println("Misure scelte -> Base: " + base + " | Altezza: " + altezza);
+        System.out.println("Misure scelte -> Base: " + rettangolo.getBase() + " | Altezza: " + rettangolo.getAltezza());
 
         System.out.println("Il rettangolo ha area: " + calcolatore.calcolaAreaRettangolo(base, altezza)  );
         System.out.println("Il rettangolo ha perimetro: " + calcolatore.calcolaPerimetroRettangolo(base, altezza)  );
