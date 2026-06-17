@@ -6,7 +6,7 @@ public class Circle extends Shape {
 
     public Circle (String nome, double raggio){
         super(nome);
-
+    
         if(raggio < 0){ throw new IllegalArgumentException("Errore, raggio invalido"); }
         
         this.raggio = raggio;

@@ -14,24 +14,24 @@ public class TestSchermo {
 
         double raggio = 0;
         
+        Circle cerchioUno = null;
         try{
             
             System.out.println("Inserire Ragggio: ");
             raggio = mioScanner.nextDouble();
+            cerchioUno = new Circle("Ciotola", raggio);
+
         } catch (InputMismatchException erroreRaggioInvalido){
 
-            System.out.println("hai sbagliato a inserire il raggio? e io ti chiudo il programma");
+            System.out.println("hai usato caratteri che non sono numeri? e io ti chiudo il programma");
+            mioScanner.close();
+            return;
+        } catch (IllegalArgumentException erroreRaggioNegativo){
+            System.out.println("Mi insersci un raggio non valido? e io ti chiudo il programma");
             return;
         }
 
-        Circle cerchioUno = new Circle("Ciotola", raggio);
-
-
-
-
-
-
-
+        //poi per il resto capi funziona solo con il cerchio implementare il resto mi siddia
 
 
 
